@@ -1,5 +1,5 @@
 # Unidade 01: Introdução à programação Python
-# Exemplo de aplicação 4: solicite ao usuário dois produtos, com suas respectivas quantidades e preços,
+# Exemplo de aplicação 4: Solicite ao usuário dois produtos, com suas respectivas quantidades e preços,
 # e mostre esses dados formatados como tabelas.
 
 prod1 = input("Digite o nome do produto 1: ")
