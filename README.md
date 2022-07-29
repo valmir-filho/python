@@ -1,4 +1,4 @@
-Repositório de exercícios da linguagem de programação Python.
+Repositório de exercícios Python.
 
 Conteúdos:
 
