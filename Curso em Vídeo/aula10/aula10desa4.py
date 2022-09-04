@@ -2,7 +2,6 @@
 # km para viagens de até 200 km e R$0,45 para viagens mais longas.
 
 import time
-from time import sleep
 distancia = int(input('Qual é a distância da viagem? (em km): '))
 print('Processando...')
 time.sleep(3)
