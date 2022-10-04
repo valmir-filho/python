@@ -1,0 +1,17 @@
+# Faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada.
+
+x = int(input('Digite um número inteiro qualquer: '))
+print('A tabuada do {} é: '.format(x))
+print('-' * 20)
+print('0 * {:2} ='.format(x), x * 0)
+print('1 * {:2} ='.format(x), x * 1)
+print('2 * {:2} ='.format(x), x * 2)
+print('3 * {:2} ='.format(x), x * 3)
+print('4 * {:2} ='.format(x), x * 4)
+print('5 * {:2} ='.format(x), x * 5)
+print('6 * {:2} ='.format(x), x * 6)
+print('7 * {:2} ='.format(x), x * 7)
+print('8 * {:2} ='.format(x), x * 8)
+print('9 * {:2} ='.format(x), x * 9)
+print('10 * {} ='.format(x), x * 10)
+print('-' * 20)
