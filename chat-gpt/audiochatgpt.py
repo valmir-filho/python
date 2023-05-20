@@ -18,7 +18,7 @@ def text_to_speech(text, output_file):
 # Get a textual response from a question using the OpenAI GPT-3.5 language model.
 def get_answer(question):
 
-    openai.api_key = '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'
+    openai.api_key = 'your_api_key'
 
     answer = openai.Completion.create(
         engine='text-davinci-003',
