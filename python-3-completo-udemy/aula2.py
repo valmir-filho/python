@@ -1,6 +1,4 @@
-# Método print
-
-# Exemplos
+# Método print.
 
 print(12, 34)
 

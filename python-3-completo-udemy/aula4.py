@@ -1,4 +1,4 @@
-# Tipos primitivos de dados
+# Tipos primitivos de dados.
 
 # int
 print(11)
@@ -13,7 +13,6 @@ print("Olá mundo!")
 print(type("Olá mundo!"))
 
 # bool
-
 print(10 == 10)
 print(10 == 11)
 print(True)
