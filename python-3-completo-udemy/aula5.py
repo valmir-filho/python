@@ -2,7 +2,7 @@ print(1 + 1)
 print("a" + "b")  # Concatenação
 # print("1" + 1)
 
-# Conversão de tipos (coerção, type convertion, tycasting, coercion).
+# Conversão de tipos (coerção, type convertion, tycasting, coercion)
 
 print(type(str(1)))
 
