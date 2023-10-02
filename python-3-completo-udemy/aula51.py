@@ -24,7 +24,7 @@ while True:
 #         print("1 - Verificar se o número é par ou ímpar.")
 #         print("2 - Sair do programa.")
 #         opcao = int(input("Digite a opção desejada: "))
-#         # Nesse if não é possível usar um operador ternário, pois temos mais de um comando.
+#         # Nesse if não é possível usar um operador ternário, pois temos mais de um comando
 #         if opcao == 2:
 #             print("Obrigado por utilizar o programa!")
 #             break

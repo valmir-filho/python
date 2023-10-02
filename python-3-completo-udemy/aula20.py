@@ -1,4 +1,4 @@
-# Introdução ao try/except
+# Introdução ao try/except.
 
 try:
     numero = input("Digite um número inteiro: ")

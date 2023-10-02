@@ -1,6 +1,6 @@
-# Detalhes sobre o interpretador do Python.
-
 """
+Detalhes sobre o interpretador do Python.
+
 Comandos úteis do terminal
 
 1) python --help: comando de ajuda do Python.
