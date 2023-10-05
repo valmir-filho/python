@@ -1,4 +1,4 @@
-# Tuplas em Python.
+# Tuplas no Python.
 
 """
 Suportam vários valores e de diferentes tipos.

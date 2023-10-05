@@ -1,4 +1,4 @@
-# Listas em Python.
+# Listas no Python.
 
 """
 Suportam vários valores e de diferentes tipos.

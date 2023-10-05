@@ -1,4 +1,4 @@
-# Listas em Python.
+# Listas no Python.
 
 linguagens_programacao = ["JavaScript", "Python", "Java",
                           "C++", "PHP", "C#", "Ruby", "Swift", "TypeScript", "Kotlin"]

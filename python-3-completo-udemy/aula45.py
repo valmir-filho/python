@@ -1,6 +1,6 @@
 # Faça uma lista de compras, onde o usuário pode inserir, apagar e listar as informações.
 
-print("*****LISTA DE COMPRAS*****")
+print("***** LISTA DE COMPRAS *****")
 lista_compras = []
 
 while True:
@@ -36,5 +36,5 @@ while True:
             else:
                 print("Erro! Item não encontrado na lista de compras.")
     else:
-        print("Erro! Opção inválida. Tente novamente.")
+        print("Opção inválida! Tente novamente.")
 print("Obrigado por utilizar o programa!")

@@ -1,4 +1,4 @@
-# Exercício: crie funções que dupliquem, tripliquem e quadripliquem um número recebido como parâmetro.
+# Exercício: crie funções que duplique, triplique e quadriplique um número recebido como parâmetro.
 
 """
 Neste código, a função calculadora recebe uma função "operacao" como parâmetro e retorna uma função interna "executar" que aplica a operação ao número fornecido como argumento. Dessa forma, você pode criar instâncias separadas da função calculadora para as operações de duplicação, triplicação e quadriplicação e usá-las conforme necessário.
