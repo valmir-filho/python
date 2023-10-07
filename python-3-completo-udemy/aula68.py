@@ -1,176 +1,47 @@
-# Faça um jogo de perguntas e respostas com alternativas.
+"""
+Empacotamento e desempacotamento de dicionários no Python.
 
-print("∞∞∞∞∞ Quizz Conhecimentos Gerais ∞∞∞∞∞")
+Se referem à técnica de manipular dicionários de forma eficiente, seja para passar argumentos em funções ou para criar e atualizar dicionários. Isso é feito usando o operador **.
 
-while True:
-    entrada = input(
-        "Vamos comecar? Digite [I] para iniciar ou [S] para sair: ").upper()
+O empacotamento de dicionários ocorre quando você coleta vários argumentos de palavras-chave em um único dicionário. Isso é útil quando você deseja passar um conjunto de argumentos de palavras-chave para uma função.
 
-    if entrada not in "IS":
-        print("Erro!")
+O desempacotamento de dicionários ocorre quando você extrai pares de chave-valor de um dicionário e os usa como argumentos de palavras-chave em uma função ou para criar um novo dicionário.
+"""
 
-    if entrada == "S":
-        break
+# Empacotamento de dicionários
+"""
+Neste exemplo, o dicionário dados é empacotado e os valores são desempacotados na chamada da função criar_pessoa usando **dados. Isso cria um novo dicionário com os mesmos pares de chave-valor.
+"""
 
-    if entrada == "I":
-        perguntas = [
-            {
-                "pergunta": "Quem foi Ernesto Che Guevara?",
-                "alternativas":
-                [
-                    "Um médico Brasileiro",
-                    "Um jogador de futebol",
-                    "Um guerrilheiro em Cuba",
-                    "Um cantor Colombiano",
-                    "Um jornalista Espanhol"
-                ],
-                "resposta": "Um guerrilheiro em Cuba"
-            },
-            {
-                "pergunta": "Onde o jogador de futebol Ronaldinho Gaúcho nasceu?",
-                "alternativas":
-                [
-                    "São Paulo",
-                    "Porto Alegre",
-                    "Curitiba",
-                    "Salvador",
-                    "Rio de Janeiro"
-                ],
-                "resposta": "Porto Alegre"
-            },
-            {
-                "pergunta": "Quem escreveu o livro 100 Anos de Solidão?",
-                "alternativas":
-                [
-                    "Gabriel Garcia Marques",
-                    "Raul Pompeu",
-                    "Machado de Assis",
-                    "Carlos Drummond de Andrade",
-                    "Clarice Lispector"
-                ],
-                "resposta": "Gabriel Garcia Marques"
-            },
-            {
-                "pergunta": "Como era o nome do pai do jogador de futebol Pelé?",
-                "alternativas":
-                [
-                    "Duilinho",
-                    "Jorginho",
-                    "Mineirinho",
-                    "Luizinho",
-                    "Dondinho"
-                ],
-                "resposta": "Dondinho"
-            },
-            {
-                "pergunta": "Qual cantor e compositor foi batizado com o nome de Luiz Maurício Pragana dos Santos?",
-                "alternativas":
-                [
-                    "Mauricio Manieri",
-                    "Lulu Santos",
-                    "Elimar Santos",
-                    "Luiz Melodia",
-                    "Luiz Alves"
-                ],
-                "resposta": "Lulu Santos"
-            },
-            {
-                "pergunta": "Quem era o presidente Americano, quando ocorreu o ataque terrorista as torres gêmeas de Nova York?",
-                "alternativas":
-                [
-                    "George W. Bush",
-                    "Barack Obama",
-                    "Ronald Reagan",
-                    "Donald Trump",
-                    "Joe Biden"
-                ],
-                "resposta": "George W. Bush"
-            },
-            {
-                "pergunta": "Qual é a altura do monumento do Cristo Redentor, localizado na cidade do Rio de Janeiro?",
-                "alternativas":
-                [
-                    "42 metros",
-                    "30 metros",
-                    "38 metros",
-                    "25 metros",
-                    "60 metros"
-                ],
-                "resposta": "38 metros"
-            },
-            {
-                "pergunta": 'Quem é o autor da frase: "Penso, logo existo"?',
-                "alternativas":
-                [
-                    "Platão",
-                    "Descartes",
-                    "Galileu",
-                    "Francis Bacon",
-                    "Sócrates"
-                ],
-                "resposta": "Descartes"
-            },
-            {
-                "pergunta": "Qual é o menor país do mundo?",
-                "alternativas":
-                [
-                    "Rússia",
-                    "Nauru",
-                    "Malta",
-                    "Mônaco",
-                    "Vaticano"
-                ],
-                "resposta": "Vaticano"
-            },
-            {
-                "pergunta": "Quanto tempo, aproximadamente, demora para a luz do sol chegar à terra?",
-                "alternativas":
-                [
-                    "2 horas",
-                    "1 dia",
-                    "8 minutos",
-                    "60 segundos",
-                    "5 minutos"
-                ],
-                "resposta": "8 minutos"
-            }
-        ]
 
-        contador = 0
+def criar_pessoa(nome, idade, cidade):
+    pessoa = {'nome': nome, 'idade': idade, 'cidade': cidade}
+    return pessoa
 
-        def jogo(pergunta):
-            global contador
-            print(pergunta["pergunta"])
 
-            for opcao, alternativa in enumerate(pergunta["alternativas"], start=1):
-                print(f"{opcao}. {alternativa}")
+dados = {'nome': 'Alice', 'idade': 30, 'cidade': 'Nova York'}
+pessoa = criar_pessoa(**dados)
+print(pessoa)
 
-            while True:
-                resposta = input("Digite o número da sua resposta: ")
+# Desempacotamento de dicionários
+"""
+No primeiro exemplo, os valores do dicionário dados são desempacotados como argumentos da função saudacao. No segundo exemplo, dois dicionários são combinados em um novo dicionário usando o desempacotamento.
 
-                if resposta.isdigit():
-                    resposta = int(resposta)
+O empacotamento e o desempacotamento de dicionários são úteis quando você lida com funções que aceitam muitos argumentos de palavras-chave ou quando deseja combinar ou atualizar dicionários de maneira eficiente. Isso torna seu código mais limpo e legível.
+"""
 
-                    if 1 <= resposta <= len(pergunta["alternativas"]):
-                        resposta = pergunta["alternativas"][resposta - 1]
 
-                        if resposta == pergunta["resposta"]:
-                            print("Resposta correta!")
-                            contador += 1
-                            break
-                        else:
-                            print(
-                                f"Resposta incorreta! A resposta correta é: {pergunta['resposta']}.")
-                            break
-                    else:
-                        print("Erro! Opção inválida.")
-                else:
-                    print("Erro! Digite um número válido.")
+def saudacao(nome, idade):
+    print(f"Olá, {nome}! Você tem {idade} anos.")
 
-        for pergunta in perguntas:
-            jogo(pergunta)
-            input("Pressione Enter para a próxima pergunta...")
-        print(f"Você acertou {contador} de {len(perguntas)} perguntas.")
-        break
 
-print("Obrigado por participar!")
+dados = {'nome': 'Alice', 'idade': 30}
+# Saída: Olá, Alice! Você tem 30 anos.
+saudacao(**dados)
+
+# Criando um novo dicionário
+dados1 = {'nome': 'Alice', 'idade': 30}
+dados2 = {'cidade': 'Nova York'}
+novo_dicionario = {**dados1, **dados2}
+# Saída: {'nome': 'Alice', 'idade': 30, 'cidade': 'Nova York'}
+print(novo_dicionario)

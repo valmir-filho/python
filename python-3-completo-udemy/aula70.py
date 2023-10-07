@@ -1,32 +1,34 @@
-# Conjuntos no Python (sets).
+"""
+Conjuntos no Python (sets).
 
-# Não permite elementos duplicados
-conjunto1 = set({6, 1, 2, 3, 1, 3, 3, 4, 5, 2, 2})
+Um conjunto é uma coleção de elementos não ordenada e mutável que não permite elementos duplicados. Os conjuntos são implementados usando a classe set. Aqui estão algumas características importantes dos conjuntos em Python:
+
+- Não permite elementos duplicados. Um conjunto não pode conter elementos duplicados. Se você tentar adicionar um elemento que já está presente no conjunto, ele não será adicionado novamente.
+- Não são indexados. Os elementos em um conjunto não têm uma posição específica, portanto, você não pode acessá-los por índice como faria em uma lista ou tupla.
+- Mutáveis. Os conjuntos são mutáveis, o que significa que você pode adicionar e remover elementos após a criação do conjunto. Entretando, só aceitam valores imutáveis.
+"""
+
+# Criando um conjunto
+conjunto1 = set({3, 4, 5})
 print(conjunto1)
+print(type(conjunto1))
 
-# tupla = 3, 1, 2, 3, 12, 4, 4, 4, 2, 3, 2
-# Type coercion
-# conjunto2 = set(tupla)
+# Itera o valor
+# conjunto2 = set("Valmir")
 # print(conjunto2)
-
-# Adicionando um elemento no conjunto (apenas 1 elemento por vez)
-# conjunto3 = {2, 1}
-# print(conjunto3)
-# conjunto3.add(5)
+# Não itera o valor
+# conjunto3 = {"Valmir"}
 # print(conjunto3)
 
-# Atualizando o conjunto (mais de 1 elemento por vez)
-# conjunto3.update([8, 6])
-# print(conjunto3)
-
-# Limpando o conjunto
-# conjunto4 = {8, 5, 2, 1}
+# Outra forma de criação
+# Parece um dicionário, mas não tem chave, apenas valor
+# conjunto4 = {3, 4, 5}
 # print(conjunto4)
-# conjunto4.clear()
-# print(conjunto4)
+# print(type(conjunto4))
 
-# Descartando um valor do conjunto
-# conjunto5 = {3, 2, 8, 12, 13, 55}
-# print(conjunto5)
-# conjunto5.discard(12)
-# print(conjunto5)
+# Criando um conjunto vazio
+# conjunto5 = set()
+# print(type(conjunto5))
+# Cuidado! Dessa forma não é possível a criação de um conjunto vazio, pois conflita com a criação de um dicionário vazio
+# conjunto6 = {}
+# print(type(conjunto6))

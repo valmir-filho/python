@@ -1,21 +1,32 @@
-# Operações com conjuntos no Python.
+# Conjuntos no Python (sets).
 
-conjunto1 = {1, 2, 3, 4, 5}
-conjunto2 = {3, 4, 5, 6, 7}
+# Não permite elementos duplicados
+conjunto1 = set({6, 1, 2, 3, 1, 3, 3, 4, 5, 2, 2})
+print(conjunto1)
 
-# União (union)
-# conjunto3 = conjunto1 | conjunto2
+# tupla = 3, 1, 2, 3, 12, 4, 4, 4, 2, 3, 2
+# Type coercion
+# conjunto2 = set(tupla)
+# print(conjunto2)
+
+# Adicionando um elemento no conjunto (apenas 1 elemento por vez)
+# conjunto3 = {2, 1}
+# print(conjunto3)
+# conjunto3.add(5)
 # print(conjunto3)
 
-# Intersecção (intersection)
-# conjunto4 = conjunto1 & conjunto2
+# Atualizando o conjunto (mais de 1 elemento por vez)
+# conjunto3.update([8, 6])
+# print(conjunto3)
+
+# Limpando o conjunto
+# conjunto4 = {8, 5, 2, 1}
+# print(conjunto4)
+# conjunto4.clear()
 # print(conjunto4)
 
-# Diferença
-# Elementos que estão apenas no set especificado do lado esquerdo do operador, excluindo-se ainda, os valores iguais encontrados no set especificado do lado direito do operador
-# conjunto5 = conjunto1 - conjunto2
+# Descartando um valor do conjunto
+# conjunto5 = {3, 2, 8, 12, 13, 55}
 # print(conjunto5)
-
-# Diferença simétrica (retorna os elementos únicos dos dois sets envolvidos)
-# conjunto6 = conjunto1 ^ conjunto2
-# print(conjunto6)
+# conjunto5.discard(12)
+# print(conjunto5)
