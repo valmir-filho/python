@@ -20,10 +20,11 @@ Aqui está o significado de cada parte:
 
 # Exemplo de criação de uma lista usando o comando for
 lista_for = []
+
 for numero in range(10):
     lista_for.append(numero)
 print(lista_for)
 
 # Exemplo de criação de uma lista usando o list comprehension
-lista_comprehension = [numero for numero in range(10)]
-print(lista_comprehension)
+# lista_comprehension = [numero for numero in range(10)]
+# print(lista_comprehension)

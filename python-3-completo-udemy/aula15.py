@@ -37,10 +37,10 @@ senha_usuario = input("Digite a senha para entrar no sistema: ")
 senha_usuario_int = int(senha_usuario)
 senha_valida = 123456
 
-# if entrada == "E" and senha_usuario_int == senha_valida:
-#     print("Acesso realizado com sucesso!")
-# else:
-#     print("Erro! Forma de entrada no sistema e/ou senha incorreta(s).")
+if entrada == "E" and senha_usuario_int == senha_valida:
+    print("Acesso realizado com sucesso!")
+else:
+    print("Erro! Forma de entrada no sistema e/ou senha incorreta(s).")
 
 # or
 # entrada = input('Digite "E" para entrar no sistema: ')

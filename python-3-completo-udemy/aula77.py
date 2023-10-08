@@ -23,12 +23,12 @@ quadrados = {x: x**2 for x in numeros}
 print(quadrados)
 
 # Exemplo: convertendo uma lista de palavras em um dicionário com os seus tamanhos
-palavras = ["python", "é", "incrível"]
-tamanhos = {word: len(word) for word in palavras}
-print(tamanhos)
+# palavras = ["python", "é", "incrível"]
+# tamanhos = {word: len(word) for word in palavras}
+# print(tamanhos)
 
 # Exemplo: filtrando pares chave-valor em um dicionário com base em uma condição
-dicionario = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
-pares_filtrados = {chave: valor for chave,
-                   valor in dicionario.items() if valor % 2 == 0}
-print(pares_filtrados)
+# dicionario = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+# pares_filtrados = {chave: valor for chave,
+#                    valor in dicionario.items() if valor % 2 == 0}
+# print(pares_filtrados)

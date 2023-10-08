@@ -10,11 +10,11 @@ quadrados = [x**2 for x in numeros]
 print(quadrados)
 
 # Exemplo 2
-palavras = ["python", "é", "incrível"]
-tamanhos = [len(word) for word in palavras]
-print(tamanhos)
+# palavras = ["python", "é", "incrível"]
+# tamanhos = [len(word) for word in palavras]
+# print(tamanhos)
 
 # Exemplo 3
-temperaturas_celsius = [0, 25, 100]
-temperaturas_fahrenheit = [(c * 9/5) + 32 for c in temperaturas_celsius]
-print(temperaturas_fahrenheit)
+# temperaturas_celsius = [0, 25, 100]
+# temperaturas_fahrenheit = [(c * 9/5) + 32 for c in temperaturas_celsius]
+# print(temperaturas_fahrenheit)

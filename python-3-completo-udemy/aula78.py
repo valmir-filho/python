@@ -14,6 +14,7 @@ O uso de isinstance() é útil em muitos cenários, especialmente quando você d
 """
 
 lista = ["a", 1, 2, 4.4, True, [0, 1, 2], (1, 2)]
+
 for item in lista:
     print(item, isinstance(item, int))
     # Passando 2 tipos ao mesmo tempo para verificação

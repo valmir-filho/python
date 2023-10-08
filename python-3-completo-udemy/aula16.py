@@ -9,10 +9,10 @@ V a l m i r
 """
 
 # Exemplos de iterações
-# nome = "Valmir"
-# print(nome[2])
-# print(nome[-4])
-
 nome = "Valmir"
-print("m" in nome)
-print("m" not in nome)
+print(nome[2])
+print(nome[-4])
+
+# nome = "Valmir"
+# print("m" in nome)
+# print("m" not in nome)
