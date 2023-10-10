@@ -3,11 +3,11 @@ Exercício: implemente um algoritmo em Python para manipular sua lista de filmes
 
 Especificações:
 
-    1) Crie uma lista vazia em Python;
-    2) Adicione o nome de 5 filmes na lista de favoritos;
-    3) O usuário deverá solicitar o nome de cada filme (usar o comando while);
-    4) Posteriormente imprima todos os filmes e sua posição na lista;
-    5) Para imprimir a lista utilizar o comando for em conjunto com a função enumerate().
+1) Crie uma lista vazia em Python;
+2) Adicione o nome de 5 filmes na lista de favoritos;
+3) O usuário deverá solicitar o nome de cada filme (usar o comando while);
+4) Posteriormente imprima todos os filmes e sua posição na lista;
+5) Para imprimir a lista utilizar o comando for em conjunto com a função enumerate().
 """
 
 print("*** Top 5 Filmes Favoritos ***")
