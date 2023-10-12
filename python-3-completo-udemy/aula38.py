@@ -20,6 +20,7 @@ print(lista)
 # Apagando um valor da lista
 # del lista[2]
 # print(lista)
+
 # del lista[-1]  # Apaga o último item da lista
 # lista.pop(0)
 # print(lista)

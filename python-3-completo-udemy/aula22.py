@@ -1,5 +1,6 @@
 """
 Exercício: faça um programa que pergunte a hora ao usuário e, baseando-se na informação, exiba a saudação apropriada.
+
 Dados: Bom dia (0-11 horas), Boa tarde (12-17 horas) e Boa noite (18-23 horas).
 """
 

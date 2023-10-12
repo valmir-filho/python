@@ -10,6 +10,7 @@ $d e %i = int
 
 nome = "Valmir"
 preco = 1234.56
+
 frase = "%s, o preço é R$%d" % (nome, preco)
 # frase = "%s, o preço é R$%.2f" % (nome, preco)
 print(frase)

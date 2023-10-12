@@ -1,8 +1,9 @@
 # Estrutura de repetição.
 
 # while
-while True:
+while True:    
     nome = input('Digite o seu nome (Para sair, digite "Pare"): ')
+
     if nome.upper() == "PARE":
         break
     else:

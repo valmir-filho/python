@@ -2,6 +2,7 @@
 Higher-Order Functions.
 
 As funções de ordem superior (Higher-Order Functions) são um conceito importante na programação funcional e estão disponíveis em Python. Basicamente, uma função de ordem superior é uma função que aceita outras funções como argumentos e/ou retorna funções como resultados. Isso significa que você pode tratar funções como cidadãos de primeira classe em Python, passando-as para outras funções e retornando-as de funções.
+
 As funções de ordem superior tornam o código mais flexível e conciso, permitindo que você trabalhe com funções de maneira mais dinâmica e reutilizável. Elas são uma parte importante da programação funcional em Python.
 """
 

@@ -4,8 +4,8 @@ while True:
     try:
         primeiro_numero = float(input("Digite o primeiro número: "))
         segundo_numero = float(input("Digite o segundo número: "))
-        operador = input(
-            "Digite o operador (+, -, *, /) ou 'sair' para encerrar: ")
+        operador = input("Digite o operador (+, -, *, /) ou 'sair' para encerrar: ")
+        
         if operador.lower() == "sair":
             break
         elif operador not in "+-*/" or len(operador) > 1:
@@ -32,4 +32,5 @@ while True:
                         f"A divisão entre {primeiro_numero} e {segundo_numero} é: {resultado:.2f}")
     except ValueError:
         print("Erro! Certifique-se de digitar um número válido.")
+
 print("Calculadora encerrada!")

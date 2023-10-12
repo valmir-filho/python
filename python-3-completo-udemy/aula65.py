@@ -42,5 +42,6 @@ dados_pessoais = {
 """
 O método setdefault é usado em dicionários no Python para definir um valor padrão para uma chave, caso a chave não exista no dicionário. Se a chave já estiver presente no dicionário, o método setdefault não fará nenhuma alteração e apenas retornará o valor atual associado à chave. 
 """
+
 # dados_pessoais.setdefault("doador_orgãos", True)
 # print(dados_pessoais)

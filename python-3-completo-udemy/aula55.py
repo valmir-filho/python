@@ -2,6 +2,7 @@
 Valor padrão em funções no Python.
 
 No Python, as funções podem ter argumentos com valores padrão (também conhecidos como argumentos padrão ou argumentos predefinidos).
+
 Valores padrão são valores que são atribuídos automaticamente aos argumentos de uma função se nenhum valor for fornecido quando a função é chamada. Isso permite que você crie funções mais flexíveis e evita a necessidade de fornecer todos os argumentos sempre que a função for usada.
 """
 

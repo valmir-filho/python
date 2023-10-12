@@ -24,17 +24,20 @@ print(" ".join(palavra_descoberta))
 # Loop principal do jogo
 while True:
     letra = input("Digite uma letra: ").lower()
+    
     # Verifica se o input é valido (se não é número ou maius de uma única letra)
     if len(letra) != 1 or not letra.isalpha():
         print("Erro! Caracter inválido.")
         continue
     tentativas += 1
+    
     # Verifica se a letra está na palavra secreta
     if letra in palavra_secreta:
         for i in range(len(palavra_secreta)):
             if palavra_secreta[i] == letra:
                 palavra_descoberta[i] = letra
         print(" ".join(palavra_descoberta))
+        
         # Verifica se o usuário descobriu a palavra completa
         if "".join(palavra_descoberta) == palavra_secreta:
             print(
@@ -43,4 +46,5 @@ while True:
             break
     else:
         print("Errou! Essa letra não existe na palavra secreta.")
+
 print("Fim de jogo! Obrigado por participar.")

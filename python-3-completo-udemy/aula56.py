@@ -2,31 +2,33 @@
 Escopo de função no Python.
 
 Em Python, o escopo (ou âmbito) refere-se à visibilidade e acessibilidade de variáveis em diferentes partes de um programa.
+
 O escopo é fundamental para entender como as variáveis funcionam em funções e em outros blocos de código. 
 
 1) Escopo local
 
-    - As variáveis definidas dentro de uma função são chamadas de variáveis locais.
-    - Elas são acessíveis apenas dentro da própria função onde foram declaradas.
-    - Variáveis locais são criadas quando a função é chamada e destruídas quando a função retorna ou conclui sua execução.
+- As variáveis definidas dentro de uma função são chamadas de variáveis locais.
+- Elas são acessíveis apenas dentro da própria função onde foram declaradas.
+- Variáveis locais são criadas quando a função é chamada e destruídas quando a função retorna ou conclui sua execução.
 
 2) Escopo global
 
-    - As variáveis definidas fora de qualquer função são chamadas de variáveis globais.
-    - Elas são acessíveis de qualquer lugar do programa, incluindo dentro de funções.
-    - Variáveis globais permanecem em escopo durante toda a execução do programa.
+- As variáveis definidas fora de qualquer função são chamadas de variáveis globais.
+- Elas são acessíveis de qualquer lugar do programa, incluindo dentro de funções.
+- Variáveis globais permanecem em escopo durante toda a execução do programa.
 
 3) Escopo local e global
 
-    - Se uma variável local tiver o mesmo nome que uma variável global, a variável local terá precedência dentro da função.
-    - No entanto, se você precisar modificar uma variável global de dentro de uma função, você deve usar a palavra-chave "global".
+- Se uma variável local tiver o mesmo nome que uma variável global, a variável local terá precedência dentro da função.
+- No entanto, se você precisar modificar uma variável global de dentro de uma função, você deve usar a palavra-chave "global".
 
 4) Escopo encadeado (nested scope)
 
-    - É possível definir funções dentro de funções (funções aninhadas).
-    - As funções internas têm acesso ao escopo da função externa, mas as funções externas não têm acesso ao escopo das funções internas.
+- É possível definir funções dentro de funções (funções aninhadas).
+- As funções internas têm acesso ao escopo da função externa, mas as funções externas não têm acesso ao escopo das funções internas.
 
 Em resumo, o escopo em Python define onde uma variável é acessível e influencia a visibilidade de variáveis em funções.
+
 Entender o escopo é fundamental para escrever código Python eficiente e sem erros. Certifique-se de atribuir variáveis globais quando necessário e de evitar confusões entre variáveis locais e globais com nomes semelhantes.
 """
 

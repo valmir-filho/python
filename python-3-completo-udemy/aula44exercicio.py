@@ -13,6 +13,7 @@ Especificações:
 print("*** Top 5 Filmes Favoritos ***")
 
 filmes_favoritos = []
+
 contador = 1
 
 while contador <= 5:
@@ -22,5 +23,4 @@ while contador <= 5:
 
 print("Lista dos 5 filmes favoritos")
 for indice, filme in enumerate(filmes_favoritos):
-
     print(indice+1, filme)

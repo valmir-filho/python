@@ -1,5 +1,7 @@
 print(1 + 1)
-print("a" + "b")  # Concatenação
+
+# Concatenação
+print("a" + "b")
 # print("1" + 1)
 
 # Conversão de tipos (coerção, type convertion, tycasting, coercion)

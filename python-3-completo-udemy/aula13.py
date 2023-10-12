@@ -2,6 +2,7 @@
 
 # if / else
 entrada = input("Você deseja 'Entrar' ou 'Sair'? ")
+
 if entrada == "Entrar":
     print("Você entrou no sistema!")
 else:
@@ -9,6 +10,7 @@ else:
 
 # if / elif / else
 # entrada = input("Você deseja 'Entrar' ou 'Sair'? ")
+
 # if entrada == "Entrar":
 #     print("Você entrou no sistema!")
 # elif entrada == "Sair":

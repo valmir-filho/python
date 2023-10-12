@@ -32,4 +32,5 @@ modulo = 25 % 5  # Resto da divisão
 print("Módulo:", modulo)
 
 print(10 % 8 == 0)  # Para saber se é múltiplo
+
 print(10 % 2 == 0)  # Para saber se é par

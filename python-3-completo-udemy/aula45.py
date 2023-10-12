@@ -1,15 +1,19 @@
 # Faça uma lista de compras, onde o usuário pode inserir, apagar e listar as informações.
 
 print("***** LISTA DE COMPRAS *****")
+
 lista_compras = []
 
 while True:
+    
     print("\nOpções:")
     print("I - Inserir item")
     print("L - Listar item(ns)")
     print("A - Apagar item")
     print("S - Sair")
+    
     entrada = input("Escolha uma opção: ").strip().upper()
+    
     if entrada == "S":
         break
     elif entrada == "I":
@@ -37,4 +41,5 @@ while True:
                 print("Erro! Item não encontrado na lista de compras.")
     else:
         print("Opção inválida! Tente novamente.")
+
 print("Obrigado por utilizar o programa!")

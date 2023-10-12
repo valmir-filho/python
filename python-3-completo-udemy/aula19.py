@@ -7,6 +7,7 @@
 
 Formas de usar o fatiamento: [i:f:p] [::]
 """
+
 palavra = "Olá Mundo!"
 print(palavra[5])
 print(palavra[-5])
@@ -17,10 +18,12 @@ print(palavra[-5])
 print(palavra[4:])  # Não precisa indicar o fim, caso eu queira toda a string
 
 # início e fim [i:f]
+
 """
 Se for indicado o fim, lembrar que sempre tenho que colocar um índice a mais, pois no Python,
 o último índice nunca é considerado.
 """
+
 print(palavra[4:9])
 print(palavra[0:3])
 print(palavra[:3])  # É possível omitir o início

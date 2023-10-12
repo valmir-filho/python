@@ -6,8 +6,10 @@ frase = "Aprender a programar com Python é a melhor maneira de iniciar na carre
 # Por padrão, o "split" vai usar o espaço para separas as palavras
 lista_palavras = frase.split()
 print(lista_palavras)
+
 # lista_palavras = frase.split('a')
 # print(lista_palavras)
+
 # lista_palavras = frase.split('an')
 # print(lista_palavras)
 

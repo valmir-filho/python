@@ -9,4 +9,5 @@ def multiplicacao(*args):
 
 
 resultado = multiplicacao(5, 5, 5, 5, 5)
+
 print(f"O resultado da multiplicação é {resultado}.")
