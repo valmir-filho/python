@@ -1,5 +1,5 @@
 """
-Exercício.
+Exercício:
 
 1) Aumente o preço dos produtos em 10%.
 2) Crie uma nova lista, usando deep copy, com esses novos preços.

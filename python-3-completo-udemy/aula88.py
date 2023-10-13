@@ -13,17 +13,16 @@ Observações:
 
 1) O Python segue uma ordem específica ao pesquisar por módulos. Ele primeiro verifica os diretórios na lista "sys.path", na ordem em que eles aparecem. Os diretórios incluem:
 
-   - O diretório do script em execução (o diretório atual).
-   - Os diretórios listados na variável de ambiente "PYTHONPATH".
-   - Diretórios padrão do sistema, onde os módulos Python padrão estão instalados.
-
+- O diretório do script em execução (o diretório atual).
+- Os diretórios listados na variável de ambiente "PYTHONPATH".
+- Diretórios padrão do sistema, onde os módulos Python padrão estão instalados.
 
 2) "sys.path" é uma lista que contém uma série de diretórios onde o Python procura por módulos. Quando você importa um módulo, o Python verifica cada diretório na lista em busca do módulo desejado.
 
 3) Você pode adicionar, modificar ou remover diretórios da lista "sys.path" durante a execução do seu programa, permitindo que você influencie a pesquisa de módulos.
 
-   - Para adicionar um diretório à lista "sys.path", você pode usar "sys.path.append(diretorio)" ou "sys.path.insert(indice, diretorio)".
-   - Para remover um diretório da lista "sys.path", você pode usar "sys.path.remove(diretorio)".
+- Para adicionar um diretório à lista "sys.path", você pode usar "sys.path.append(diretorio)" ou "sys.path.insert(indice, diretorio)".
+- Para remover um diretório da lista "sys.path", você pode usar "sys.path.remove(diretorio)".
 
 4) Exemplo de uso:
    

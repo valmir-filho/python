@@ -5,13 +5,13 @@ No Python, as funções decoradoras (decorators) são um recurso poderoso e flex
 
 Aqui estão alguns pontos-chave sobre decoradores no Python:
 
-1) Sintaxe de decorador: os decoradores são definidos como funções que recebem outra função como argumento. Eles geralmente definem uma função interna que envolve a função original e modifica seu comportamento.
+- Sintaxe de decorador: os decoradores são definidos como funções que recebem outra função como argumento. Eles geralmente definem uma função interna que envolve a função original e modifica seu comportamento.
 
-2) Aplicação de decoradores: decoradores são aplicados usando a notação "@" antes da definição da função que você deseja decorar.
+- Aplicação de decoradores: decoradores são aplicados usando a notação "@" antes da definição da função que você deseja decorar.
 
-3) Ordem de execução: os decoradores são aplicados na ordem em que são definidos. Isso significa que, se você tiver vários decoradores aplicados a uma função, eles serão executados na ordem em que aparecem de cima para baixo.
+- Ordem de execução: os decoradores são aplicados na ordem em que são definidos. Isso significa que, se você tiver vários decoradores aplicados a uma função, eles serão executados na ordem em que aparecem de cima para baixo.
 
-4) Uso comuns de decoradores: decoradores são comumente usados para fins como controle de acesso, registro, medição de tempo, validação de argumentos e outras tarefas de gerenciamento de funções.
+- Uso comuns de decoradores: decoradores são comumente usados para fins como controle de acesso, registro, medição de tempo, validação de argumentos e outras tarefas de gerenciamento de funções.
 
 Python também inclui alguns decoradores internos úteis, como "@staticmethod", "@classmethod" e "@property" para trabalhar com métodos de classe e propriedades. Além disso, existem bibliotecas e frameworks que fornecem decoradores prontos para uso para tarefas específicas.
 

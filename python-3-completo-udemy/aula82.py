@@ -14,6 +14,7 @@ import sys
 generator = (number for number in range(1000000))
 # generator = (number for number in range(10000000))
 # print(generator)
+
 print(next(generator))
 # print(next(generator))
 # print(next(generator))

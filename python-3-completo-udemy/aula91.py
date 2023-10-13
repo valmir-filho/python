@@ -12,7 +12,7 @@ Vamos entender cada um desses conceitos:
 Em resumo, "variáveis livres" são aquelas que são definidas em escopos superiores e referenciadas em funções internas, enquanto "nonlocal" é usado para modificar variáveis de escopos superiores a partir de funções internas. Esses conceitos são úteis para entender o comportamento das variáveis em funções aninhadas no Python.
 """
 
-# Exemplo variáveis livres
+# Exemplo de variável livre
 
 
 def funcao_externa():
