@@ -1,5 +1,5 @@
 """
-Função isinstance() no Python.
+Função "isinstance()" no Python.
 
 A função isinstance() no Python é usada para verificar se um objeto pertence a uma determinada classe ou tipo de dados. Ela retorna True se o objeto for uma instância da classe especificada ou de qualquer uma de suas subclasses, caso contrário, retorna False. A sintaxe geral da função isinstance() é a seguinte:
 
