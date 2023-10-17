@@ -19,7 +19,7 @@ Os modos de abertura mais comuns são:
 """
 
 arquivo = open(
-    "/Users/valmirfilho/Downloads/python-3-completo-udemy/aula110/arquivo.txt", "w")
+    "/Users/valmirfilho/Downloads/python-3-completo-udemy/aula110/arquivo.txt", "w", encoding="utf8")
 arquivo.close()
 
 # Dessa forma não há necessidade de fechar o arquivo
