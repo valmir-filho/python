@@ -10,4 +10,4 @@
 
 ### IDEs utilizadas: PyCharm e Virtual Studio Code.
 
-> teste
+`print("Hello, World!")`
