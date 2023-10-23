@@ -9,28 +9,3 @@
 - Exercícios do curso de Python 3 do básico ao avançado (com projetos reais) da Udemy do Prof. Luiz Otávio Miranda.
 
 ### IDEs utilizadas: PyCharm e Virtual Studio Code.
-
-`print("Hello, World!")`
-
-``print("Teste")``
-
-```python
-def greet(name):
-    print("Hello, " + name + "!")
-```
-
-```
-function greet(name) {
-console.log("Hello World");
-}
-```
-
----
-
-| Header 1 | Header 2 |
-| -------- | -------- |
-| Content 1 | Content 2 |
-
-- [x] Task 1
-- [ ] Task 2
-- [ ] Task 3
