@@ -11,3 +11,5 @@
 ### IDEs utilizadas: PyCharm e Virtual Studio Code.
 
 `print("Hello, World!")`
+
+'print("Teste")'
