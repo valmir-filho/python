@@ -18,3 +18,9 @@
 def greet(name):
     print("Hello, " + name + "!")
 ```
+
+```
+function greet(name) {
+console.log("Hello World");
+}
+```
