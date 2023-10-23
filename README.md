@@ -30,3 +30,7 @@ console.log("Hello World");
 | Header 1 | Header 2 |
 | -------- | -------- |
 | Content 1 | Content 2 |
+
+- [x] Task 1
+- [ ] Task 2
+- [ ] Task 3
