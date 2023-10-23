@@ -13,3 +13,8 @@
 `print("Hello, World!")`
 
 ``print("Teste")``
+
+```python
+def greet(name):
+    print("Hello, " + name + "!")
+```
