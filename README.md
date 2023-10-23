@@ -9,3 +9,5 @@
 - Exercícios do curso de Python 3 do básico ao avançado (com projetos reais) da Udemy do Prof. Luiz Otávio Miranda.
 
 ### IDEs utilizadas: PyCharm e Virtual Studio Code.
+
+> teste
