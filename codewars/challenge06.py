@@ -14,8 +14,7 @@ def add_binary(a, b):
     # Adds the two numbers.
     sum = a + b
   
-    # Converts the sum to binary and returns the string representation, removing the first two characters '0b' from the binary
-    # representation.
+    # Converts the sum to binary and returns the string representation, removing the first two characters '0b' from the binary representation.
     return bin(sum)[2:]
 
 # Testing the function with the provided examples.
