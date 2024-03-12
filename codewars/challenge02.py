@@ -10,7 +10,7 @@ Examples (Input -> Output)
 def reverse_list(lst):
     return lst[::-1]
 
-# Examples of use:
+# Examples of use.
 
 example1 = [1, 2, 3, 4]
 result1 = reverse_list(example1)
