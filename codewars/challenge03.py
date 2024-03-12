@@ -14,7 +14,7 @@ def square_digits(num):
   # Converts the number to a list of digits.
   digits = [int(digit) for digit in str(num)]
     
-  # Calculate the square of each digit and concatenate the results
+  # Calculate the square of each digit and concatenate the results.
   squared_digits = ''.join(str(digit ** 2) for digit in digits)
     
   # Convert the resulting string back to an integer.
