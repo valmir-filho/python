@@ -24,4 +24,4 @@ def swap_names(full_name):
 # Example usage.
 original_name = "John McClane"
 swapped_name = swap_names(original_name)
-print(swapped_name)  # Output will be "McClane John"
+print(swapped_name)  # Output will be "McClane John".
