@@ -13,4 +13,4 @@ def find_capital_indices(word):
 
 # Example usage.
 word = "CodEWaRs"
-print(find_capital_indices(word))  # Output: [0, 3, 4, 6]
+print(find_capital_indices(word))  # Output: [0, 3, 4, 6].
