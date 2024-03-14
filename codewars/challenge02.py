@@ -14,8 +14,8 @@ def reverse_list(lst):
 
 example1 = [1, 2, 3, 4]
 result1 = reverse_list(example1)
-print(result1)  # Expected output: [4, 3, 2, 1]
+print(result1)  # Expected output: [4, 3, 2, 1].
 
 example2 = [9, 2, 0, 7]
 result2 = reverse_list(example2)
-print(result2)  # Expected output: [7, 0, 2, 9]
+print(result2)  # Expected output: [7, 0, 2, 9].
