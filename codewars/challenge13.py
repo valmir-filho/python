@@ -7,7 +7,7 @@ def RemoveExclamationMarks(s):
     # Remove all exclamation marks from the input string and return the result.
     return s.replace('!', '')
 
-# Example usage:
+# Example usage.
 example_string = "Hello! World!! This is an example!!!"
 result = RemoveExclamationMarks(example_string)
 print(result)  # Output: Hello World This is an example.
