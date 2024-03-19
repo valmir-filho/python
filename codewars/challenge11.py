@@ -21,7 +21,7 @@ def swap_names(full_name):
     else:
         return "Please provide a full name with at least two names."
 
-# Example usage.
+# Usage example.
 original_name = "John McClane"
 swapped_name = swap_names(original_name)
 print(swapped_name)  # Output will be "McClane John".
