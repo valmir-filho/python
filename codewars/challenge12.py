@@ -23,7 +23,6 @@ def binary_array_to_number(arr):
         result = result * 2 + bit
     return result
 
-# Test cases.
 test_cases = [
     [0, 0, 0, 1],
     [0, 0, 1, 0],
