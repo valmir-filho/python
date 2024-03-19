@@ -12,13 +12,12 @@ that is the square of an integer; in other words, it is the product of some inte
 The tests will always use some integral number, so don't worry about that in dynamic typed languages.
 
 Examples:
-
--1  =>  false
- 0  =>  true
- 3  =>  false
- 4  =>  true
-25  =>  true
-26  =>  false
+1) -1  =>  false
+2)  0  =>  true
+3)  3  =>  false
+4)  4  =>  true
+5) 25  =>  true
+6) 26  =>  false
 """
 
 
