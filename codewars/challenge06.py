@@ -15,6 +15,6 @@ def add_binary(a, b):
     # Converts the sum to binary and returns the string representation, removing the first two characters '0b' from the binary representation.
     return bin(sum)[2:]
 
-# Testing the function with the provided examples.
+# Usage examples.
 test_cases = [(1, 1), (5, 9)]
 test_results = [add_binary(a, b) for a, b in test_cases]
