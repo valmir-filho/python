@@ -3,7 +3,7 @@ Write a function that takes a single non-empty string of only lowercase and uppe
 an ordered list containing the indices of all capital (uppercase) letters in the string.
 
 Example (Input --> Output):
-1) "CodEWaRs" --> [0,3,4,6]
+1) "CodEWaRs" --> [0,3,4,6].
 """
 
 
