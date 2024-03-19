@@ -26,6 +26,6 @@ def number_of_people_on_bus(bus_stops):
     # Return the final count of people on the bus.
     return people_on_bus
 
-# Example test case.
+# Usage example.
 bus_stops = [(10, 0), (3, 5), (5, 8)]
 print(number_of_people_on_bus(bus_stops))
