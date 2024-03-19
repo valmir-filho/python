@@ -10,6 +10,6 @@ Example (Input --> Output):
 def find_capital_indices(word):
     return [index for index, char in enumerate(word) if char.isupper()]
 
-# Example usage.
+# Usage example.
 word = "CodEWaRs"
 print(find_capital_indices(word))  # Output: [0, 3, 4, 6].
