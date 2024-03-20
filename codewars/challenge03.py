@@ -22,6 +22,5 @@ def square_digits(num):
   return result
 
 # Usage examples.
-
 print(square_digits(9119))  # Output: 811181.
 print(square_digits(765))   # Output: 493625.
