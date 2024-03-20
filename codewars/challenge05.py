@@ -25,7 +25,6 @@ def is_square(n):
     return n >= 0 and int(n**0.5)**2 == n
 
 # Usage examples.
-
 print(is_square(16))  # True.
 print(is_square(25))  # True.
 print(is_square(14))  # False.
