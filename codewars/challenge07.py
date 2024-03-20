@@ -13,6 +13,7 @@ def is_palindrome(s):
     return s == s[::-1]
 
 # Usage examples.
+
 print(is_palindrome("Madam"))  # Output: True.
 print(is_palindrome("Racecar"))  # Output: True.
 print(is_palindrome("Hello"))  # Output: False.
