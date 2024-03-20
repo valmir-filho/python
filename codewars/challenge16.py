@@ -20,11 +20,11 @@ def can_form_triangle(a, b, c):
     # Check the Triangle Inequality Theorem.
     return a + b > c and a + c > b and b + c > a
 
-# Test the function with the provided examples
-print(can_form_triangle(1, 2, 2))  # Expected: True
-print(can_form_triangle(4, 2, 3))  # Expected: True
-print(can_form_triangle(2, 2, 2))  # Expected: True
-print(can_form_triangle(1, 2, 3))  # Expected: False
-print(can_form_triangle(-5, 1, 3))  # Expected: False
-print(can_form_triangle(0, 2, 3))  # Expected: False
-print(can_form_triangle(1, 2, 9))  # Expected: False
+# Usage examples.
+print(can_form_triangle(1, 2, 2))  # Expected: True.
+print(can_form_triangle(4, 2, 3))  # Expected: True.
+print(can_form_triangle(2, 2, 2))  # Expected: True.
+print(can_form_triangle(1, 2, 3))  # Expected: False.
+print(can_form_triangle(-5, 1, 3))  # Expected: False.
+print(can_form_triangle(0, 2, 3))  # Expected: False.
+print(can_form_triangle(1, 2, 9))  # Expected: False.
