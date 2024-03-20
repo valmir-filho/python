@@ -16,6 +16,5 @@ def add_binary(a, b):
     return bin(sum)[2:]
 
 # Usage examples.
-
 test_cases = [(1, 1), (5, 9)]
 test_results = [add_binary(a, b) for a, b in test_cases]
