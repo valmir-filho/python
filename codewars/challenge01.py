@@ -18,6 +18,7 @@ def to_jaden_case(string):
   return jaden_cased_string
 
 # Usage examples.
+
 quote = "How can mirrors be real if our eyes aren't real."
 jaden_cased_quote = to_jaden_case(quote)
 
