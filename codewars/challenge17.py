@@ -9,7 +9,7 @@ def multiply_by_eight_or_nine(n):
     else:
         return n * 9
 
-# Test the function with both even and odd numbers
+# Usage example.
 test_numbers = [2, 3, 4, 5, 10]
 results = [multiply_by_eight_or_nine(n) for n in test_numbers]
 print(results)
