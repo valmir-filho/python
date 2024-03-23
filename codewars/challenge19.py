@@ -10,6 +10,6 @@ def multiply_and_increase(value):
     else:
         return "Error"
 
-# Examples
-print(multiply_and_increase(10))  # Should return 506
-print(multiply_and_increase("test"))  # Should return "Error"
+# Usage Examples.
+print(multiply_and_increase(10))  # Should return 506.
+print(multiply_and_increase("test"))  # Should return "Error".
