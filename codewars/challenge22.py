@@ -13,7 +13,7 @@ def check_array_against_limit(array, limit):
             return False
     return True
 
-# Usagem example.
+# Usage example.
 array = [10, 20, 30, 40]
 limit = 50
 result = check_array_against_limit(array, limit)
