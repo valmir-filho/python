@@ -1,0 +1,22 @@
+[
+    {
+        "nome": "Valmir",
+        "altura": 1.7,
+        "peso": 70,
+        "raca": "Branca",
+        "idade": 44,
+        "sexo": "M",
+        "religiao": "Ateu",
+        "possui_deficiencia": false
+    },
+    {
+        "nome": "Audi",
+        "altura": 1.6,
+        "peso": 50,
+        "raca": "Branca",
+        "idade": 44,
+        "sexo": "F",
+        "religiao": "Católica",
+        "possui_deficiencia": false
+    }
+]
