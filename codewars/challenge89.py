@@ -8,8 +8,8 @@ Empty positions are marked .. Walls are marked W. Start and exit positions are
 guaranteed to be empty in all test cases.
 """
 
-
 from collections import deque
+
 
 def path_finder(maze):
     # Convert the maze string into a 2D list for easier manipulation.
