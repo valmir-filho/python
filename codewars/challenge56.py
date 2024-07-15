@@ -4,8 +4,8 @@ return the number of unique arrays that can be formed by picking exactly one
 element from each subarray.
 """
 
-
 from itertools import product
+
 
 def unique_combinations(arrays):
     # Generate all combinations by picking one element from each subarray.
