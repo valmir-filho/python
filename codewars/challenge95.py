@@ -4,7 +4,6 @@ the string in snake_case notation. Lowercase characters can be numbers.
 If the method gets a number as input, it should return a string.
 """
 
-
 import re
 
 
