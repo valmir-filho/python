@@ -1,31 +1,21 @@
 """
-Given an m*n matrix M, calculate the determinant of all submatrices and return the greatest determinant of them.
+A pangram is a sentence that contains every single letter of the alphabet at least once.
+For example, the sentence "The quick brown fox jumps over the lazy dog" is a pangram,
+because it uses the letters A-Z at least once (case is irrelevant).
+Given a string, detect whether or not it is a pangram. Return True if it is, False if not.
+Ignore numbers and punctuation.
 """
 
-import numpy as np
 
-
-def determinant(matrix):
-    # Compute the determinant of a matrix using numpy.
-    return int(round(np.linalg.det(matrix)))
-
-
-def gdet(M):
-    # Compute the greatest determinant among all submatrices of M.
-    rows, cols = len(M), len(M[0])
-    max_determinant = float('-inf')
+def is_pangram(s):
+    # Define the alphabet set.
+    alphabet = set('abcdefghijklmnopqrstuvwxyz')
     
-    # Iterate over all possible top-left corners of submatrices.
-    for start_row in range(rows):
-        for start_col in range(cols):
-            # Iterate over all possible submatrix sizes.
-            for end_row in range(start_row + 1, rows + 1):
-                for end_col in range(start_col + 1, cols + 1):
-                    # Extract submatrix.
-                    submatrix = [row[start_col:end_col] for row in M[start_row:end_row]]
-                    # Compute determinant if submatrix is square.
-                    if len(submatrix) == len(submatrix[0]):  # Check if square.
-                        det = determinant(submatrix)
-                        max_determinant = max(max_determinant, det)
+    # Remove non-alphabetic characters and convert to lowercase.
+    sanitized_string = ''.join(filter(str.isalpha, s.lower()))
     
-    return max_determinant
+    # Create a set of unique characters in the sanitized string.
+    unique_chars = set(sanitized_string)
+    
+    # Check if the unique characters cover the whole alphabet.
+    return unique_chars >= alphabet
