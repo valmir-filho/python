@@ -102,6 +102,7 @@ A nova deve conter pelo menos 1 letra e 1 número."""
                 print(f'SMS enviado com sucesso para o número: {cellphone}')
                 print()
                 print(f'Celular errado? Entre em contato com a TI (3316-5999) para resetar a sua senha.')
+                print()
             else:
                 print('Failed to send SMS:', response.status_code)
                 print('Details:', response.text)
