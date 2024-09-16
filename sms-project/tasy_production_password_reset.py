@@ -18,10 +18,14 @@ api_url = 'https://api360.classeaservicos.com.br/api/send.php'
 api_username = ''
 api_password = ''
 
+# User warning.
+print()
+print("*** Se você abriu essa janela por engano, feche-a clicando no 'X' no canto superior direito. ***")
+
 # Prompts the user for their CPF and validates the input.
 while True:
     print()
-    cpf_user = input("Informe o seu CPF (apenas números): ")
+    cpf_user = input("Para resetar a sua senha do Tasy informe o seu CPF (apenas números): ")
     
     # Checks if the CPF contains only numbers and has exactly 11 characters.
     if cpf_user.isdigit() and len(cpf_user) == 11:
