@@ -66,7 +66,7 @@ def process_cpf(cpf_user):
                     {
                         "numero": cellphone,
                         "mensagem": f"""Sua senha temporária é: {generated_password}
-Por favor, altere-a no próximo acesso ao Tasy.
+ Por favor, altere-a no próximo acesso ao Tasy.
 A nova deve conter 6 caracteres com pelo menos 1 letra e 1 número."""
                     }
                 ]
