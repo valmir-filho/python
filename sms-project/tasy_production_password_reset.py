@@ -1,3 +1,4 @@
+# Imports.
 import cx_Oracle
 import requests
 from requests.auth import HTTPBasicAuth
@@ -18,24 +19,20 @@ api_url = 'https://api360.classeaservicos.com.br/api/send.php'
 api_username = ''
 api_password = ''
 
+
 # Function to mask the phone number.
 def mask_phone_number(phone_number):
-    # Keep the first 2 and last 4 digits, replacing the middle with asterisks.
     return phone_number[:2] + "****" + phone_number[-4:]
+
 
 # Function to process the CPF and perform the necessary operations.
 def process_cpf(cpf_user):
-    # Create the connection string (DSN) for DB.
     dsn_tns = cx_Oracle.makedsn(host, port, service_name=service_name)
 
     try:
-        # Connect to the DB.
         connection = cx_Oracle.connect(user=db_username, password=db_password, dsn=dsn_tns)
-
-        # Create a cursor.
         cursor = connection.cursor()
 
-        # Define the SQL query to get user data.
         sql_query = """
         SELECT u.nm_usuario, u.ds_senha, u.ds_tec, p.nr_telefone_celular
         FROM usuario u
@@ -43,38 +40,25 @@ def process_cpf(cpf_user):
         WHERE p.nr_cpf = :cpf
         """
 
-        # Execute the query with the provided CPF.
         cursor.execute(sql_query, cpf=cpf_user)
-
-        # Fetch the results.
         row = cursor.fetchone()
 
         if row:
-            # Capture the data.
             username = row[0]
             cellphone = row[3]
 
-            # Prepare the PL/SQL procedure call.
             plsql = """
             BEGIN
                 feas_altera_senha(:ds_login_p, :senha_out);
             END;
             """
-
-            # Define the output parameter.
             senha_out = cursor.var(cx_Oracle.STRING)
-
-            # Execute the procedure.
             cursor.execute(plsql, ds_login_p=username, senha_out=senha_out)
-
-            # Capture the generated password.
             generated_password = senha_out.getvalue()
 
-            # Check if the phone number already contains the area code "41".
             if not cellphone.startswith("41"):
                 cellphone = "41" + cellphone
 
-            # Prepare the data to send the SMS.
             sms_data = {
                 "codigo_carteira": "",
                 "codigo_fornecedor": "",
@@ -83,16 +67,14 @@ def process_cpf(cpf_user):
                         "numero": cellphone,
                         "mensagem": f"""Sua senha temporária é: {generated_password}
 Por favor, altere-a no próximo acesso ao Tasy.
-A nova deve conter 6 caracteres com pelo menos 1 letra e 1 número."""  # Message format.
+A nova deve conter 6 caracteres com pelo menos 1 letra e 1 número."""
                     }
                 ]
             }
 
-            # Making the POST request to send the SMS.
             try:
                 response = requests.post(api_url, json=sms_data, auth=HTTPBasicAuth(api_username, api_password), timeout=10)
 
-                # Check the response status.
                 if response.status_code == 200:
                     show_success_message(cellphone)
                 else:
@@ -103,39 +85,42 @@ A nova deve conter 6 caracteres com pelo menos 1 letra e 1 número."""  # Messag
         else:
             messagebox.showerror("Erro!", "Registro não encontrado para o CPF fornecido.")
 
-        # Close the cursor and connection.
         cursor.close()
         connection.close()
 
     except cx_Oracle.DatabaseError as e:
         messagebox.showerror("Error", f"Error connecting to Oracle or executing the query: {e}")
 
+
 # Function to show the success message.
 def show_success_message(cellphone):
-    # Mask the phone number.
     masked_phone_number = mask_phone_number(cellphone)
     
-    # Show the success message and close all windows on OK.
     if messagebox.showinfo(
         "Success",
         f'Senha enviada com sucesso para o celular final: {masked_phone_number}\n\n'
         'Não recebeu a senha? Ligue para a TI: 3316-5999.'
     ):
-        root.destroy()  # Close the application immediately after user clicks OK.
+        root.destroy()
+
 
 # Function to validate the CPF and start the process.
 def validate_and_process_cpf(event=None):
     cpf_user = cpf_entry.get()
     
-    # Validate the CPF (only numbers and 11 digits).
     if cpf_user.isdigit() and len(cpf_user) == 11:
         process_cpf(cpf_user)
     else:
         messagebox.showerror("Erro", "CPF inválido! Certifique-se de digitar apenas os 11 números.")
+        root.after(100, lambda: cpf_entry.delete(0, 'end'))
+
 
 # Function to validate the input.
 def validate_input(P):
-    if P.isdigit() or P == "":
+    # Allow input if it is numeric and the length is 11 or less.
+    if P.isdigit() and len(P) <= 11:
+        return True
+    elif P == "":
         return True
     return False
 
@@ -171,7 +156,7 @@ cpf_label.pack(pady=10)
 
 cpf_entry = ttk.Entry(main_frame, width=30, justify='center', validate='key', validatecommand=(vcmd, '%P'))
 cpf_entry.pack(pady=10)
-cpf_entry.bind('<Return>', validate_and_process_cpf)  # Bind the Enter key to submit the CPF.
+cpf_entry.bind('<Return>', validate_and_process_cpf)
 
 # Button to continue.
 submit_button = ttk.Button(main_frame, text="Continue", command=validate_and_process_cpf)
