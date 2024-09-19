@@ -101,7 +101,7 @@ A nova deve conter 6 caracteres com pelo menos 1 letra e 1 número."""  # Messag
             except requests.exceptions.RequestException as e:
                 messagebox.showerror("Error", f'Error sending SMS: {e}')
         else:
-            messagebox.showerror("Error", "No record found for the provided CPF.")
+            messagebox.showerror("Erro!", "Registro não encontrado para o CPF fornecido.")
 
         # Close the cursor and connection.
         cursor.close()
@@ -133,6 +133,12 @@ def validate_and_process_cpf(event=None):
     else:
         messagebox.showerror("Erro", "CPF inválido! Certifique-se de digitar apenas os 11 números.")
 
+# Function to validate the input.
+def validate_input(P):
+    if P.isdigit() or P == "":
+        return True
+    return False
+
 # GUI configuration using Tkinter.
 root = tk.Tk()
 root.title("🔐 Alteração de Senha do Tasy 🔐")
@@ -152,6 +158,9 @@ style.configure('TButton', font=('Helvetica', 14), padding=10)
 style.configure('TLabel', font=('Helvetica', 14))
 style.configure('TEntry', font=('Helvetica', 14))
 
+# Create a validation method for CPF entry.
+vcmd = root.register(validate_input)
+
 # Main frame to center the widgets.
 main_frame = ttk.Frame(root, padding="20")
 main_frame.pack(expand=True)
@@ -160,7 +169,7 @@ main_frame.pack(expand=True)
 cpf_label = ttk.Label(main_frame, text="Por favor, Informe o número do seu CPF:")
 cpf_label.pack(pady=10)
 
-cpf_entry = ttk.Entry(main_frame, width=30, justify='center')
+cpf_entry = ttk.Entry(main_frame, width=30, justify='center', validate='key', validatecommand=(vcmd, '%P'))
 cpf_entry.pack(pady=10)
 cpf_entry.bind('<Return>', validate_and_process_cpf)  # Bind the Enter key to submit the CPF.
 
