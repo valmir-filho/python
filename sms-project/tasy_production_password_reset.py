@@ -22,7 +22,7 @@ api_password = ''
 
 # Function to mask the phone number.
 def mask_phone_number(phone_number):
-    return phone_number[:2] + "****" + phone_number[-4:]
+    return phone_number[:2] + "*****" + phone_number[-4:]
 
 
 # Function to process the CPF and perform the necessary operations.
@@ -129,8 +129,8 @@ root = tk.Tk()
 root.title("🔐 Alteração de Senha do Tasy 🔐")
 
 # Define the window size and center it on the screen.
-window_width = 450
-window_height = 300
+window_width = 500
+window_height = 320
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
 position_top = int(screen_height/2 - window_height/2)
@@ -149,6 +149,10 @@ vcmd = root.register(validate_input)
 # Main frame to center the widgets.
 main_frame = ttk.Frame(root, padding="20")
 main_frame.pack(expand=True)
+
+# Label for warning message.
+warning_label = ttk.Label(main_frame, text="ATENÇÃO! Uso Exclusivo Para Alteração de Senha do Tasy", foreground="red", font=('Helvetica', 12, 'bold'))
+warning_label.pack(pady=10)
 
 # Label and entry field for CPF.
 cpf_label = ttk.Label(main_frame, text="Por favor, Informe o número do seu CPF:")
