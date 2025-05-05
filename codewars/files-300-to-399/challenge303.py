@@ -1,5 +1,5 @@
 """
-Wra function that accepts a square matrix (N x N 2D array) and returns the determinant of the matrix.
+Write a function that accepts a square matrix (N x N 2D array) and returns the determinant of the matrix.
 
 How to take the determinant of a matrix -- it is simplest to start with the smallest cases:
 
