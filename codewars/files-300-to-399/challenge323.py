@@ -1,4 +1,4 @@
-"""
+""
 Happy Holidays fellow Code Warriors!
 
 Santa's senior gift organizer Elf developed a way to represent up to 26 gifts by assigning a unique alphabetical character to each gift.
