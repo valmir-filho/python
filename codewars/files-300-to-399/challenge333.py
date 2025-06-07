@@ -1,4 +1,4 @@
-""
+"""
 Given three arrays of integers, return the sum of elements that are common in all three arrays.
 """
 
