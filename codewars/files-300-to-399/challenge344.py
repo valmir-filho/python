@@ -33,7 +33,14 @@ def get_function(sequence):
             return f"f(x) = x + {m}"
         else:
             return f"f(x) = x - {abs(m)}"
-    else:
+    elif n == -1: # Added specific handling for n = -1.
+        if m == 0:
+            return "f(x) = -x"
+        elif m > 0:
+            return f"f(x) = -x + {m}"
+        else:
+            return f"f(x) = -x - {abs(m)}"
+    else: # For all other non-zero n values.
         if m == 0:
             return f"f(x) = {n}x"
         elif m > 0:
