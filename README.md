@@ -11,6 +11,7 @@
 - Projeto de reset de senha do sistema Tasy;
 - Projeto de monitoramento da contingência do sistema Tasy;
 - Projeto de monitoramento das ordens de serviço do sistema Tasy;
+- Projeto de monitoramento do consumo da CPU dos containers appserver do sistema Tasy;
 - Projeto de monitoramento do sistema Tasy;
 - Projeto do uso do ChatGPT por comando de voz.
 
