@@ -13,6 +13,7 @@
 - Projeto de monitoramento das ordens de serviço do sistema Tasy;
 - Projeto de monitoramento do consumo da CPU dos containers appserver do sistema Tasy;
 - Projeto de monitoramento do sistema Tasy;
-- Projeto do uso do ChatGPT por comando de voz.
+- Projeto do uso do ChatGPT por comando de voz;
+- Projeto de envio de pesquisa de satisfação via SMS.
 
 ### IDEs utilizadas: PyCharm e Visual Studio Code.
