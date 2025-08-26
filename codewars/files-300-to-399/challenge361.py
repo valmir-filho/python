@@ -24,17 +24,21 @@ def find_missing(sequence):
         The value of the missing term.
     """
     
-    # Calculate the common difference. Since only one term is missing and it's not
-    # at the ends, at least one of the first two differences will be the true
-    # common difference.
-    diff1 = sequence[1] - sequence[0]
-    diff2 = sequence[2] - sequence[1]
+    # Calculate the common difference. We check the first two differences.
+    # One of them will be the true common difference, while the other will be double it.
+    d1 = sequence[1] - sequence[0]
+    d2 = sequence[2] - sequence[1]
     
-    common_difference = min(diff1, diff2)
+    # Determine the correct common difference.
+    # It's the one with the smaller absolute value.
+    if abs(d1) < abs(d2):
+        common_difference = d1
+    else:
+        common_difference = d2
     
-    # Iterate through the sequence to find where the gap is.
+    # Iterate through the sequence to find the gap.
     for i in range(len(sequence) - 1):
         if sequence[i] + common_difference != sequence[i + 1]:
             return sequence[i] + common_difference
-            
-    return None # Should not be reached given the problem constraints.
+    
+    return None # This line should not be reached based on the problem description.
