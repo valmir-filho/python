@@ -6,7 +6,7 @@ from playsound import playsound
 import openai
 
 
-# Functions.
+# Functions
 
 # Converting text into speech and playing the corresponding audio
 def text_to_speech(text, output_file):
