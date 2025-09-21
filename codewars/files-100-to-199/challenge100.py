@@ -1,4 +1,4 @@
-""
+"""
 Write a function that takes in a string of one or more words,
 and returns the same string, but with all words that have five
 or more letters reversed (Just like the name of this Kata).
