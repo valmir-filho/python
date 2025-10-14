@@ -15,13 +15,13 @@ from datetime import datetime
 
 
 def check_coupon(entered_code, correct_code, current_date, expiration_date):
-    # Verifica se os códigos são iguais (ignorando espaços e maiúsculas/minúsculas).
-    if entered_code.strip().lower() != correct_code.strip().lower():
+    # Comparação direta sem conversão implícita (verifica valor e tipo).
+    if entered_code is not correct_code:
         return False
     
-    # Converte as datas de string para objetos datetime.
+    # Converte as datas para datetime.
     current_date_obj = datetime.strptime(current_date, "%B %d, %Y")
     expiration_date_obj = datetime.strptime(expiration_date, "%B %d, %Y")
     
-    # Verifica se a data atual é menor ou igual à data de expiração.
+    # Verifica validade da data.
     return current_date_obj <= expiration_date_obj
