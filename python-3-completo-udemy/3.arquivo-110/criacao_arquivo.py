@@ -1,4 +1,4 @@
-"""
+""
 Manipulação de arquivos no Python.
 
 A manipulação de arquivos no Python é uma tarefa comum em programação, pois permite que você leia, escreva e gerencie dados armazenados em arquivos. O Python oferece várias bibliotecas e métodos embutidos para trabalhar com arquivos.
