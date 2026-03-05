@@ -1,4 +1,4 @@
-"""
+""
 You are sitting comfortably in your sofa, well within the comforts of your home.
 You type furiously on your keyboard - unable to solve a frustrating codewars problem.
 Suddenly, you feel you are falling in an endless pit. You land in The Depths Of Tartarus.
