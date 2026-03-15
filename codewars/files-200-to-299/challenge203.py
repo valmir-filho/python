@@ -1,4 +1,4 @@
-"""
+""
 When no more interesting kata can be resolved, I just choose to create the new kata, to solve their own, to enjoy the process.
 
 Example:
