@@ -14,6 +14,8 @@
 - Projeto de monitoramento do consumo da CPU dos containers appserver do sistema Tasy;
 - Projeto de monitoramento do sistema Tasy;
 - Projeto do uso do ChatGPT por comando de voz;
-- Projeto de envio de pesquisa de satisfação via SMS.
+- Projeto de envio de pesquisa de satisfação via SMS;
+- Exercício de criação da Tabela Verdade;
+- Projeto de adição de usuários nos grupos de pasta de rede da Feas.
 
 ### IDEs utilizadas: PyCharm e Visual Studio Code.
