@@ -1,4 +1,4 @@
-""
+"""
 Create a function that finds the integral of the expression passed.
 
 In order to find the integral all you need to do is add one to the exponent (the second argument),
