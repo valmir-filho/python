@@ -26,6 +26,6 @@ Extension: Once you have fixed all the syntax errors present in the code (basic 
 
 
 def my_first_kata(a, b):
-    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+    if type(a) not in (int, float) or type(b) not in (int, float):
         return False
     return a % b + b % a
