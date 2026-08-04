@@ -1,4 +1,4 @@
-""
+"""
 You have a string of numbers, starting with the third number each number is the result of an operation performed using the previous two numbers.
 
 Complete the function which returns a string of the operations in order and separated by a comma and a space, e.g. "subtraction, subtraction, addition".
